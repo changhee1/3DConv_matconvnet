@@ -1,6 +1,7 @@
-# Simple cuDNN Warpper
-3D Conv, deconv functions for Matlab.
-(requires CUDA, CUDNN)
+# 3DConv_matconvnet
+* cuDNN wrapper (easy, simple codes)
+* 3D Conv, deconv mex functions for matconvnet.
+* (requires CUDA, CUDNN)
 
 ## install
 * call `compile();`
