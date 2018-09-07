@@ -183,7 +183,7 @@ void DeConvBackward(const CudaMxArray5D& in, const CudaMxArray5D& filter,
 
   size_t workspace_filter_size = 0, workspace_data_size = 0;
   CHECKCUDNN(cudnnGetConvolutionBackwardFilterWorkspaceSize(handle,
-    der_out_desc, der_out_desc, conv_desc, filter_desc, conv_filter_algo,
+    der_out_desc, data_desc, conv_desc, filter_desc, conv_filter_algo,
     &workspace_filter_size));
 
   CHECKCUDNN(cudnnGetConvolutionForwardWorkspaceSize(handle,
