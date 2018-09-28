@@ -197,7 +197,7 @@ void DeConvBackward(const CudaMxArray5D& in, const CudaMxArray5D& filter,
   cudaMalloc(&d_workspace, workspace_size);
 
   CudaMxArray5D der_in(h,w,d,c1,1);
-  CudaMxArray5D der_filter(fh,fw,fd,c1,c2);
+  CudaMxArray5D der_filter(fh,fw,fd,c2,c1);
   CudaMxArray2D der_bias(c2,1);
   der_in.Wrap(der_in_ptr);
   der_filter.Wrap(der_filter_ptr);
