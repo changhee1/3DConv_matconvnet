@@ -5,7 +5,7 @@
 
 ## install
 * call `compile();`
-* tested on Matlab R2017b/2018a, Ubuntu 14.04/16.04, CUDA 8.0/9.0, cuDNN 7.1
+* tested on Matlab R2017b/2018a/2019a, Ubuntu 14.04/16.04, CUDA 8.0/9.0/10.0, cuDNN 7.1/7.5
 
 ## usage:
 3D Convolution
